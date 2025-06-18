@@ -1,0 +1,319 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf7;
+  color: #222;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  background-color: #fcfcfb;
+  border-bottom: 10px solid #d4af37;
+  padding: .5% ;
+ 
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.logo {
+  height: 60px;
+}
+
+.main-nav a {
+  margin-left: 2rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 2rem;
+}
+
+.main-nav a:hover {
+  color: #d4af37;
+}
+
+.hero.rich-hero {
+  background-image: url('../images/shul-rich.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #222;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: #000;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin: 10px 0 30px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+.btn.gold {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+}
+
+.btn.gold:hover {
+  background-color: #b9911c;
+}
+
+.btn.outline {
+  background-color: transparent;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+}
+
+.btn.outline:hover {
+  background-color: #f9f6ed;
+}
+
+.section.luxury-section {
+  padding: 60px 20px;
+  background-color: #fffdf7;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px #eee;
+}
+
+th {
+  background-color: #d4af37;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+n vkrau
+.site-footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+/* גרסת מובייל */
+@media screen and (max-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav a {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  table, th, td {
+    font-size: 0.9rem;
+  }
+}
+
+/* אנימציית כניסה */
+.fade-in {
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+}
+
+.event-list li {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.whatsapp-link i {
+  margin-left: 8px;
+}
+
+    .event-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #000;
+  color: gold;
+  padding: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.main-nav {
+  margin-top: 10px;
+}
+
+.main-nav a {
+  color: rgb(104, 89, 5);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+   color: rgb(104, 89, 5);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  color: #bfa14a;
+  margin-top: 30px;
+}
+
+.event-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-section h2 {
+  margin-bottom: 10px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA851;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
