@@ -1,36 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>תרומות לקהילה</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>סליקת תרומה - בית כנסת כתר-אליהו</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-container">
-      <h1>תרומות</h1>
-      <nav><a href="index.html">חזרה לעמוד הבית</a></nav>
+      <h1>תרומות לקהילה</h1>
+      <nav>
+        <a href="index.html" class="back-link">&larr; חזרה לדף הבית</a>
+      </nav>
     </div>
   </header>
-  <main class="container section">
-    <form>
-      <input type="text" placeholder="שם מלא" required />
-      <input type="email" placeholder="אימייל (אופציונלי)" />
-      <select>
-        <option>בחר מטרת תרומה</option>
-        <option>קידוש</option>
-        <option>שיעור</option>
-        <option>הנצחה</option>
-      </select>
-      <input type="number" placeholder="סכום (₪)" required />
-      <button type="submit">בצע תרומה</button>
-    </form>
+
+  <main>
+    <div class="donation-card">
+      <h2>סליקת תרומה מאובטחת</h2>
+      <div class="secured">
+        <i class="fa-solid fa-lock"></i> חיבור מוצפן • פרטי האשראי מוגנים
+      </div>
+      <form>
+        <input type="text" placeholder="שם מלא" required />
+        <input type="email" placeholder="אימייל (לא חובה)" />
+        <select required>
+          <option value="">בחר מטרת תרומה</option>
+          <option>קידוש</option>
+          <option>שיעור</option>
+          <option>הנצחה</option>
+          <option>תרומה כללית</option>
+        </select>
+        <input type="number" min="5" step="5" placeholder="סכום התרומה (₪)" required />
+        <div class="card-logos">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+        </div>
+        <input type="text" maxlength="19" placeholder="מספר כרטיס אשראי" inputmode="numeric" required />
+        <div class="credit-row">
+          <input type="text" maxlength="5" placeholder="MM/YY" required />
+          <input type="text" maxlength="4" placeholder="CVV" required />
+        </div>
+        <button type="submit"><i class="fa-solid fa-credit-card"></i> בצע תרומה</button>
+      </form>
+    </div>
   </main>
+
   <footer class="site-footer">
     <div class="container">
-      <p>כתר-אליהו © כל הזכויות שמורות</p>
+      <p>כתר-אליהו © כל הזכויות שמורות 2025</p>
     </div>
   </footer>
 </body>

@@ -1,160 +1,68 @@
-
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <title>אירועים בבית הכנסת</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
-<body>
-
-<header class="site-header">
-  <div class="container header-container">
-    <!-- <img src="images/logo.png" alt="לוגו כתר אליהו" class="logo" /> -->
-    <nav class="main-nav">
-      <a href="index.html">דף הבית</a>
-      <a href="events.html">אירועים</a>
-    </nav>
-  </div>
-</header>
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <title>אירועים בבית הכנסת - כתר אליהו</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background-color: #fff;
-      color: #222;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-    }
-
-    header {
-      background-color: #000;
-      color: gold;
-      padding: 20px;
-      text-align: center;
-      font-size: 26px;
-      font-weight: bold;
-      animation: fadeInDown 1s ease-in-out;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: gold;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #fff;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fafafa;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
-      animation: fadeIn 1.5s ease-in-out;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #000;
-    }
-
-    h2 {
-      font-size: 24px;
-      color: #bfa14a;
-      margin-top: 30px;
-    }
-
-    .event-section {
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .event-section h2 {
-      margin-bottom: 10px;
-    }
-
-    .whatsapp-button {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-      font-size: 16px;
-    }
-
-    .whatsapp-button:hover {
-      background-color: #1DA851;
-    }
-
-    .btn-container {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(30px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    @keyframes fadeInDown {
-      from {opacity: 0; transform: translateY(-20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-  </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-container">
+      <nav class="main-nav">
+        <a href="index.html" class="main-link"><i class="fa-solid fa-house"></i> דף הבית</a>
+        <a href="events.html" class="main-link active"><i class="fa-solid fa-calendar-days"></i> אירועים</a>
+        <a href="donate.html" class="main-link gold-btn"><i class="fa-solid fa-coins"></i> תרומה</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <div class="event-card-wrap fade-in">
+      <div class="event-header">
+        <div class="event-icon-xl gold-shadow"><i class="fa-solid fa-calendar-days"></i></div>
+        <h1 class="event-main-title">אירועים משפחתיים בכתר-אליהו</h1>
+        <div class="event-subtitle">
+          שילוב של קדושה, אווירה חמה, וליווי אישי לכל אירוע – יוקרה אמיתית בלב הקהילה
+        </div>
+      </div>
+      <div class="event-list">
+        <div class="event-section-card">
+          <div class="event-mini-icon gold-shadow"><i class="fa-solid fa-baby"></i></div>
+          <h2>ברית מילה</h2>
+          <p>טקס אינטימי, מכובד ומרגש עם כיבוד קל, קבלת פנים חמה, וליווי מלא עד הרגע האחרון.</p>
+        </div>
+        <div class="event-section-card">
+          <div class="event-mini-icon gold-shadow"><i class="fa-solid fa-torah"></i></div>
+          <h2>בר מצווה</h2>
+          <p>עלייה לתורה, קריאה מרגשת, הדרכה אישית וסעודת מצווה – בעיצוב יוקרתי ואווירה משפחתית.</p>
+        </div>
+        <div class="event-section-card">
+          <div class="event-mini-icon gold-shadow"><i class="fa-solid fa-glass-cheers"></i></div>
+          <h2>שבע ברכות</h2>
+          <p>אירועי שבע ברכות באווירה ביתית – דברי תורה, שירה, ושפע חום ואהבה קהילתית.</p>
+        </div>
+      </div>
+      <div class="event-cta">
+        <div class="event-cta-title">
+          <i class="fa-solid fa-circle-info"></i>
+          <b>מחפשים אירוע בלתי נשכח?</b>
+        </div>
+        <div class="event-cta-desc">
+          נשמח ללוות אתכם בכל שלב, בהתאמה אישית ובשירות ברמה הגבוהה ביותר!
+        </div>
+        <a href="https://wa.me/972503334332" class="btn whatsapp-btn big" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> לפרטים נוספים והצטרפות בוואטסאפ
+        </a>
+      </div>
+    </div>
+  </main>
 
-
-<div class="container">
-  <h1><i class="fa-solid fa-calendar-days"></i> ברוכים הבאים למקום שמחבר בין קדושה לשמחה</h1>
-  <p>בבית הכנסת כתר אליהו תוכלו לקיים אירועים משפחתיים מרגשים באווירה קדושה, עיצוב יוקרתי וליווי אישי חם.</p>
-
-  <div class="event-section">
-    <h2>✦ ברית מילה</h2>
-    <p>טקס אינטימי באולם בית הכנסת עם כיבוד קל ואווירה מיוחדת. כולל ארגון מלא מהקבלה ועד הברכות.</p>
-  </div>
-
-  <div class="event-section">
-    <h2>✦ בר מצווה</h2>
-    <p>עלייה לתורה, הדרכה אישית, קריאה מרגשת וארוחת מצווה במקום – ברוח הקודש והקהילה.</p>
-  </div>
-
-  <div class="event-section">
-    <h2>✦ שבע ברכות</h2>
-    <p>אירועי שבע ברכות מרגשים, בליווי דברי תורה, שירה, קירבה ואווירה ביתית.</p>
-  </div>
-
-  <div class="btn-container">
-    <a href="https://wa.me/972503334332" class="whatsapp-button" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i> לפרטים נוספים והצטרפות בוואטסאפ
-    </a>
-  </div>
-</div>
-
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>כל הזכויות שמורות לבית כנסת כתר-אליהו © 2025</p>
+    </div>
+  </footer>
 </body>
 </html>
