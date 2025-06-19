@@ -673,61 +673,47 @@ body {
   margin-top: 0.1em;
 }
 
-@media (max-width: 650px) {
-  .event-card-wrap {
-    max-width: 98vw;
-    padding: 1.2rem 0.3rem;
-    border-radius: 1.2rem;
-  }
-  .event-main-title {
-    font-size: 1.18em;
-  }
-  .event-section-card {
-    padding: 1.0em 0.4em 0.7em 0.4em;
-  }
-}
+/* ...שאר הקוד שלך למעלה... */
 
+/* כל קטעי @media אחרים שיש */
 
 @media (max-width: 650px) {
-  .hero.rich-hero, .section.luxury-section, .event-card-wrap {
-    max-width: 98vw;
-    padding: 1rem 0.25rem;
-    border-radius: 0.9rem;
-  }
-  .hero-content h1, h1, .event-main-title {
-    font-size: 1.14rem !important;
-    line-height: 1.27;
-    text-align: center;
-    word-break: break-word;
-  }
-  .hero-content h2, h2, .event-subtitle {
-    font-size: 1rem !important;
-    line-height: 1.25;
-    text-align: center;
-    word-break: break-word;
+  .hero.rich-hero {
+    padding: 0;
+    margin: 1.1rem auto 1.5rem auto;
+    border-radius: 1.1rem;
+    max-width: 97vw;
   }
   .hero-overlay {
-    padding: 1.2rem 0.3rem 1rem 0.3rem;
+    padding: 1.4rem 0.5rem 1rem 0.5rem;
+  }
+  .hero-content h1 {
+    font-size: 1.19rem !important;
+    margin-bottom: 0.3rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  .hero-content h2 {
+    font-size: 1rem !important;
+    color: #20927e;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    line-height: 1.22;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem;
   }
   .hero-buttons {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
   }
-}
-
-@media (max-width: 430px) {
-  .main-link, .btn, .gold-btn, .btn.gold, .btn.outline {
-    font-size: 0.97rem !important;
-    padding: 0.6rem 1.1rem !important;
-  }
-  .main-table th, .main-table td {
-    font-size: 0.83rem;
-    padding: 0.43rem 0.1rem;
-  }
-  .event-main-title, h1 {
-    font-size: 1.0rem !important;
-  }
-  .event-section-card h2, .section-title {
-    font-size: 0.95em !important;
+  .btn, .btn.gold, .btn.outline {
+    font-size: 1.01rem !important;
+    padding: 0.68rem 1.3rem !important;
+    border-radius: 1.1rem !important;
+    min-width: 0;
   }
 }
